@@ -1,0 +1,90 @@
+body{
+    /* Fond d'écran répété horizontalement avec une image "ciel.png" */
+    background: url("../images/ciel.png") repeat-x;
+    /* Taille du fond d'écran ajustée pour occuper 100% de la hauteur de la vue (viewport) */
+    background-size: auto 100vh;
+    /* Aucune marge autour du corps de la page */
+    margin: 0;
+   
+}
+
+#paysage{
+    /* Fond d'écran répété horizontalement avec une image "paysage.png" */
+    background: url("../images/paysage.png") repeat-x;
+    /* Position fixe par rapport à la fenêtre du navigateur */
+    position: fixed;
+    /* Position en bas de 71 pixels depuis le bord supérieur de la fenêtre */
+    bottom: 71Px;
+    /* Hauteur de l'élément de 283 pixels */
+    height: 283px;
+    /* Largeur de l'élément de 100% de la largeur de la fenêtre */
+    width: 100%;
+  
+}
+
+#sol-bas{
+    /* Fond d'écran répété horizontalement avec une image "sol.png" */
+    background: url("../images/sol.png") repeat-x;
+    /* Position fixe par rapport à la fenêtre du navigateur */
+    position: fixed;
+    /* Position en bas de l'élément */
+    bottom: 0;
+    /* Hauteur de l'élément de 74 pixels */
+    height: 74px;
+    /* Largeur de l'élément de 100% de la largeur de la fenêtre */
+    width: 100%;
+}
+
+#sol-haut{
+     /* Fond d'écran répété horizontalement avec une image "sol2.png" */
+    background: url("../images/sol2.png") repeat-x;
+    /* Position fixe par rapport à la fenêtre du navigateur */
+    position: fixed;
+    /* Position en bas de 71 pixels depuis le bord supérieur de la fenêtre */
+    bottom: 71px;
+    /* Hauteur de l'élément de 72 pixels */
+    height: 72px;
+    /* Largeur de l'élément de 100% de la largeur de la fenêtre */
+    width: 100%;
+}
+
+
+
+#mario{
+    /* Image de fond avec "mario.png" */
+    background-image: url("../images/mario.png");
+    /* Hauteur de l'élément de 42 pixels */
+    height: 42px;
+    /* Largeur de l'élément de 30 pixels */
+    width: 30px;
+    /* Déplacement horizontal de l'image de fond à -3 pixels */
+    background-position-x: -3px ;
+    /* Position absolue par rapport à son conteneur */
+    position: absolute;
+    /* Position en bas de 68 pixels depuis le bord supérieur du conteneur */
+    bottom: 68px;
+     /* Centrage horizontal avec une position de 50% depuis le bord gauche du conteneur */
+    left: 50%;
+   
+
+}
+.mario-droite{
+    /* Animation nommée "mario" d'une durée de 0.5 seconde avec 25 étapes, répétée indéfiniment */
+    animation: mario 0.5s steps(25) infinite; 
+    
+}
+.mario-gauche{
+    /* Animation nommée "mario" d'une durée de 0.5 seconde avec 25 étapes, répétée indéfiniment */
+    animation: mario 0.5s steps(25) infinite; 
+    transform:translateX(-50%) scaleX(-1);
+}
+
+
+
+
+@keyframes mario {
+    100%{
+        background-position-x:
+         -1005px ;
+    }
+}
